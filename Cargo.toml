@@ -1,0 +1,13 @@
+[package]
+name = "aviso-bz"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.39"
+chrono-tz = "0.10.0"
+more-config = { version = "2.1.5", features = ["all", "async"] }
+regex = "1.11.1"
+serde = { version = "1.0.217", features = ["serde_derive"] }
+thirtyfour = {git = "https://github.com/westsidedev/thirtyfour"}
+tokio = {version = "1.40.0", features = ["full"]}
