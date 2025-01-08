@@ -13,15 +13,15 @@ Make sure the browser and driver binaries are located in /bin, the software will
 
 Ex: *brave-browser* for *brave* only
   
-  **Go to the release page, or click [here](https://github.com/westsidedev/seofast-ru/releases)**
+  **Go to the release page, or click [here](https://github.com/westsidedev/aviso-bz/releases)**
 
 + **Termux** *(arm64)*
 
-  **Go to the release page, or click [here](https://github.com/westsidedev/seofast-ru/releases)**
+  **Go to the release page, or click [here](https://github.com/westsidedev/aviso-bz/releases)**
 
 + **Windows**
 
-  **Go to the release page, or click [here](https://github.com/westsidedev/seofast-ru/releases)**
+  **Go to the release page, or click [here](https://github.com/westsidedev/aviso-bz/releases)**
   
 <h2>BUILD:</h2>
 
