@@ -56,7 +56,7 @@ impl UserData {
             .create(true)
             .open(format!("{}/userdata.json", path))
             .unwrap();
-        let port = "9001";
+        let port = "9002";
         let _ = opt.write_all(format!(
                 "{{\n\t\"email\":\"{}\",\n\t\"password\": \"{}\",\n\t\"cookies\": \"{}\",\n\t\"proxy\": \"{}\",\n\t\"port\": \"{}\"\n}}",
                 email, senha, cookies, proxy, port
