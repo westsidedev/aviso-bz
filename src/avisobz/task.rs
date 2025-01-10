@@ -182,7 +182,9 @@ impl TaskDriverAvisobz {
         };
         print.user().await;
         let _ = driver
-            .screenshot(&Path::new(&format!("config/avisobz/youtube.png",)))
+            .screenshot(&Path::new(&format!(
+                "config/avisobz/screenshot/youtube.png",
+            )))
             .await;
         let work_serf = driver.find_all(By::ClassName("work-serf")).await;
         if let Err(e) = work_serf.as_ref() {
@@ -323,6 +325,9 @@ impl TaskDriverAvisobz {
         .await;
 
         if let Err(e) = span.click().await {
+            let _ = driver
+                .screenshot(Path::new("config/avisobz/screenshot/span326.png"))
+                .await;
             Log::error(
                 "TaskDriverAvisobz->YOUTUBE",
                 &format!("line:{}\n{}", line!(), e),
@@ -342,6 +347,12 @@ impl TaskDriverAvisobz {
 
         let windows = driver.windows().await;
         if let Err(e) = windows.as_ref() {
+            let _ = driver
+                .screenshot(Path::new(&format!(
+                    "config/avisobz/screenshot/windows{}.png",
+                    line!()
+                )))
+                .await;
             Log::error(
                 "TaskDriverAvisobz->YOUTUBE",
                 &format!("line:{}\n{}", line!(), e),
@@ -359,6 +370,12 @@ impl TaskDriverAvisobz {
 
             let windows = driver.windows().await;
             if let Err(e) = windows.as_ref() {
+                let _ = driver
+                    .screenshot(Path::new(&format!(
+                        "config/avisobz/screenshot/windows{}.png",
+                        line!()
+                    )))
+                    .await;
                 Log::error(
                     "TaskDriverAvisobz->YOUTUBE",
                     &format!("line:{}\n{}", line!(), e),
@@ -408,6 +425,12 @@ impl TaskDriverAvisobz {
             true => &format!("timer_ads_{}", id),
             false => "tmr",
         };
+
+        Log::debug(
+            "TaskDriverAvisobz->YOUTUBE",
+            &format!("newmode:{:?}", newmode),
+        )
+        .await;
 
         //check old mode
         if !newmode {
