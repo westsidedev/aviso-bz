@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://aviso.bz/?r=itsover" target="_blank"><img src="https://aviso.bz/statica/pictures/A-468.gif" style="width:468px;heigh:60px" alt="aviso | рекламный сервис"></a>
+  <a href="https://aviso.bz/" target="_blank"><img src="https://aviso.bz/statica/pictures/A-468.gif" style="width:468px;heigh:60px" alt="aviso | рекламный сервис"></a>
 </div>
 
         
