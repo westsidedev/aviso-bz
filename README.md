@@ -93,5 +93,5 @@ chmod +x aviso-bz
 ```
 
 <h2 align="center"><a href="LICENSE.txt">Apache License</a></h2>
-<div align="center"><b>Copyright &copy; 2024 westsidedev. All rights reserved.</b></div>
+<div align="center"><b>Copyright &copy; 2025 westsidedev. All rights reserved.</b></div>
 
