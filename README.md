@@ -3,7 +3,7 @@
 </div>
 
         
-**A website that pays for micro tasks like watching YouTube videos or browsing other websites. Please consider helping me by entering my affiliate link [here](https://aviso.bz/?r=itsover). If you have any questions, you can call me [here](https://t.me/westsidedev)**
+**A website that pays for micro tasks like watching YouTube videos or browsing other websites. If you have any questions, you can call me [here](https://t.me/westsidedev)**
 
 <h2>DOWNLOAD:</h2>
 
