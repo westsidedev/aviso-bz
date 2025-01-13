@@ -26,7 +26,7 @@ impl Avisobz {
     pub async fn start(mode: Mode, headless: bool) {
         let c = Colors::new().await;
         print!("\x1bc");
-        print!("{}[{}AVISOBZ{}]\n", c.CIAN, c.WHITE, c.CIAN);
+        print!("{}[{}AVISOBZ{}]\n", c.WHITE, c.CIAN, c.WHITE);
         stdout().flush().unwrap();
         let thread = ThreadTaskAvisobz { headless };
         match mode {
@@ -61,22 +61,22 @@ impl Print {
         let c = Colors::new().await;
         print!(
             "\r\x1b[K{}[{}{}{}][{}{}{}|{}{}{}|{}{:.2}{}][{}{}{}]",
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.task,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.username.to_uppercase(),
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.classification,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.money,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             time_now(Sao_Paulo).await,
-            c.CIAN
+            c.WHITE
         );
         stdout().flush().unwrap();
     }
@@ -85,25 +85,25 @@ impl Print {
         let c = Colors::new().await;
         print!(
             "\r\x1b[K{}[{}{}{}][{}{}{}|{}{}{}|{}{}{}|{}{}{}][{}{}{}]",
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.task,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.username.to_uppercase(),
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.classification,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             mode,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             tmr,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             time_now(Sao_Paulo).await,
-            c.CIAN
+            c.WHITE
         );
         stdout().flush().unwrap();
     }
@@ -114,25 +114,25 @@ impl Print {
         let earn = re.captures(earn).unwrap();
         print!(
             "\r\x1b[K{}[{}{}{}][{}{}{}|{}{}{}|{}{:.2}{}|{}{}{}][{}{}{}]\n",
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.task,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.username.to_uppercase(),
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.classification,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             self.money,
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             &earn[1],
-            c.CIAN,
             c.WHITE,
+            c.CIAN,
             time_now(Sao_Paulo).await,
-            c.CIAN
+            c.WHITE
         );
         stdout().flush().unwrap();
     }
@@ -145,7 +145,7 @@ impl Print {
             }
             print!(
                 "\r\x1b[K{}[{}PAUSED{}]({}{}{})",
-                colors.CIAN, colors.YELLOW, colors.CIAN, colors.YELLOW, i, colors.CIAN
+                colors.WHITE, colors.YELLOW, colors.WHITE, colors.YELLOW, i, colors.WHITE
             );
             stdout().flush().unwrap();
             sleep(Duration::from_secs(1)).await;
