@@ -25,7 +25,7 @@ impl Browser {
             "--start-maximized",
             "--log-level=OFF",
             "--silent",
-            //"--disable-web-security",
+            "--disable-web-security",
             "--allow-running-insecure-content",
             "--mute-audio",
             "--no-sandbox",
@@ -87,7 +87,7 @@ impl Browser {
             2,
         );
         let _ = caps.add_experimental_option("excludeSwitches", vec!["enable-automation"]);
-        //let _ = caps.add_experimental_option("useAutomationExtension", false);
+        let _ = caps.add_experimental_option("useAutomationExtension", false);
         let _ = caps.add_experimental_option("prefs", prefs);
         let _ = caps.add_experimental_option("w3c", true);
 
